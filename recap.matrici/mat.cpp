@@ -17,10 +17,16 @@ int main() {
 
   cout << "scriere" << endl;
   for (i = 1; i<= m; i++) {
+    cout << "[";
     for (j = 1;j <= n; j++) {
-      cout << v[i][j] << " ";
+      if (j != n) {
+        cout << v[i][j] << ", ";
+      } else {
+        cout << v[i][j];
+      }
     }
-    cout << endl;
+    cout << "]" <<  endl;
   }
+
   return 0;
 }
